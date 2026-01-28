@@ -167,7 +167,7 @@ We’ll use a digital music library as our running example
 ---
 
 
-# Entities and entity sets
+## Entities and entity sets
 
 
 - Entity

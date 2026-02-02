@@ -33,6 +33,8 @@ CST 363
 
 ## Recap: Course Outline
 
+<div class="p-5">
+
 - SQL
   - How to use a relational DB?
 - Database implementation
@@ -41,10 +43,15 @@ CST 363
   - How to design a database schema?
 - Beyond relational databases 
 
+</div>
+
 
 ---
 
 ## Problem Statement
+
+<div class="p-5">
+
 
 Suppose someone asks you to model data for their business or organization
 Problems:
@@ -56,9 +63,16 @@ Problems:
 - How to share your model with others?
 
 
+</div>
+
+
 ---
 
 ## What is a good first model?
+
+
+<div class="p-5">
+
 
 Some things we might want:
 
@@ -75,11 +89,17 @@ Is a programming language a good first modeling language?
 How about English?
 
 
+</div>
+
 
 ---
 
 
 ## Phases of the database design process
+
+
+<div class="p-5">
+
 
 - Understand data needs of future users
   - Talk to users and domain experts; write things down
@@ -93,11 +113,17 @@ How about English?
   - Specify physical features of DB, like file organization
 
 
+</div>
+
 
 ---
 
 
 ## Entity-Relationship (ER) Models
+
+
+<div class="p-5">
+
 
 - Developed by Peter Chen of MIT
 - Used for conceptual design
@@ -109,8 +135,13 @@ How about English?
 
 We’ll use a digital music library as our running example
 
----
 
+</div>
+
+
+---
+layout: center
+---
 
 <img src="/images/chen-er.png" class="w-150" />
 
@@ -121,33 +152,49 @@ We’ll use a digital music library as our running example
 ## Inspiration from Chinese character development 
 
 
+<div class="p-5">
+
+<br>
+
 <img src="/images/chinese.png" class="w-150" />
 
 
+</div>
+
 
 ---
+
 
 ## Inspiration from Egyptian Hieroglyphs
 
 <div class="p-5">
 
+<br>
 
 <img src="/images/egyptian.png" class="w-100" />
 
 
 </div>
 
+
 ---
 
 ## Example ER Model – Chen-style attributes
 
+<div class="p-5">
+
+<br>
 
 <img src="/images/chen-d1.png" class="w-100" />
 
+<br>
 
 - entities represented as rectangles
 - attributes represented as ovals, primary key is underlined
 - relationships represented as diamonds (not shown here)
+
+
+</div>
 
 
 ---
@@ -155,19 +202,28 @@ We’ll use a digital music library as our running example
 ## Example ER Model — Hybrid variant
 
 
-<img src="/images/hybrid.png" class="w-100" />
+<div class="p-5">
 
+<br>
 
+<img src="/images/hybrid.png" class="w-120" />
+
+<br>
 
 
 - here, “contribution” (diamond) is a relationship
 - “contribution” is shown to have two attributes
 
 
+</div>
+
 ---
 
 
 ## Entities and entity sets
+
+
+<div class="p-5">
 
 
 - Entity
@@ -182,11 +238,14 @@ We’ll use a digital music library as our running example
   - What are some music library examples?
 
 
+</div>
 
 
 ---
 
 ## Attributes
+
+<div class="p-5">
 
 
 - Similar to object-oriented prog. languages
@@ -201,17 +260,28 @@ In music library, what might be attributes of:
 - album?
 
 
+</div>
+
 ---
 
 ## Entity sets and attributes for music library
+
+<div class="p-5">
+
 
 - Let’s think of entity sets for the music library
 - Let’s think of attributes for these entity sets
 
 
+</div>
+
+
 ---
 
 ## Relationships and relationship sets
+
+<div class="p-5">
+
 
 - Relationship
   - An association between entities
@@ -225,10 +295,15 @@ In music library, what might be attributes of:
   - For example, ‘teaches’ and ‘takes’ are 
   - relationship sets
 
+</div>
+
 
 ---
 
 ## More on relationship sets
+
+<div class="p-5">
+
 
 - Participation
   - ‘instructor’ participates in the ‘teaches’ relationship set
@@ -241,17 +316,29 @@ In music library, what might be attributes of:
   - ‘takes’ relationship has a grade attribute
 
 
+
+</div>
+
+
 ---
 
 ## Relationship sets for music library
+
+<div class="p-5">
 
 
 - Let’s try to think of relationship sets for the music library
 
 
+</div>
+
 ---
 
 ## More on attributes
+
+
+<div class="p-5">
+
 
 
 - Every attribute has a domain of permitted values
@@ -264,6 +351,9 @@ In music library, what might be attributes of:
 - Attributes can take value ‘null’
 
 
+</div>
+
+
 ---
 
 ## Attributes for music library?
@@ -272,6 +362,8 @@ In music library, what might be attributes of:
 ---
 
 ## ER vs OO modeling
+
+<div class="p-5">
 
 
 - Similar concepts used:
@@ -284,10 +376,15 @@ In music library, what might be attributes of:
   - one experimental study says ER is a little better
   - ER models faster to develop; preferred by modelers
 
+</div>
+
 
 ---
 
 ## Summary
+
+<div class="p-5">
+
 
 - Database design
   - conceptual design
@@ -299,4 +396,5 @@ In music library, what might be attributes of:
   - relationships, relationship sets
 
 
+</div>
 

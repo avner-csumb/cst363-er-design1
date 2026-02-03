@@ -217,6 +217,57 @@ layout: center
 
 </div>
 
+
+---
+
+## Example ER Model --- Crow's Foot
+
+
+<div class="grid grid-cols-2 gap-8">
+
+<div>
+
+In crow's foot syntax, the previous diagram is:
+
+```mermaid {scale: 0.6}
+erDiagram
+  contributor ||--o{ contribution : makes
+  candidate   ||--o{ contribution : receives
+
+  contributor {
+    int    contbr_id PK
+    string name
+    string zip
+  }
+
+  candidate {
+    int    cand_id PK
+    string name
+  }
+
+  contribution {
+    int    contb_id PK
+    decimal amount
+    int    contbr_id FK
+    int    cand_id FK
+  }
+```
+
+</div>
+
+<div>
+
+<br><br>
+
+- In Crow’s Foot notation the M:N relationship `contribution` is shown as an associative entity between `contributor` and `candidate`
+  - `contribution` has its own attributes and its own identifier `contb_id`
+
+</div>
+
+</div>
+
+
+
 ---
 
 
